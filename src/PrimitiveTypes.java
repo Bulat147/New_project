@@ -1,4 +1,4 @@
-public class FromLesson {
+public class PrimitiveTypes {
 
     public static void main(String[] args){
         boolean myBool = true;
