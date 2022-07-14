@@ -1,4 +1,4 @@
-package Interfaces;
+package interfaces;
 
 public interface MyIntrf {
     public int SOME_NUM = 76; /* В интерфейсах поля могут быть нужны, для сигнатуры внутренних методов,

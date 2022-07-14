@@ -1,4 +1,4 @@
-package Interfaces;
+package interfaces;
 
 public class Person implements MyIntrf{
 

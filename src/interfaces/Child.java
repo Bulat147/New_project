@@ -1,4 +1,4 @@
-package Interfaces;
+package interfaces;
 
 public class Child extends Parent{
     public void chlMethod(){
