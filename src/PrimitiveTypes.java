@@ -10,5 +10,11 @@ public class PrimitiveTypes {
         for (int i = 0; i < 10; i++){
             System.out.println("Hello, int!");
         }
+
+
+        byte myByte = 127; // Это тоже int, но от -128 до 127 (т.к. 2^8)
+        char myChar = 'a'; // А, так вот почему JAVA ругается на одинарные кавычки для String - потому
+                                                                    // что они используются для типа char!
+
     }
 }
