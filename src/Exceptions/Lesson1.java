@@ -6,9 +6,8 @@ import java.util.Scanner;
 
 public class Lesson1 {
     private static final String FILE_PATH = "Files" + File.separator + "text";
-
-    public static void main(String[] args) throws FileNotFoundException{
-        System.out.println("");
+    public static void main(String[] args) throws FileNotFoundException{ // это предупреждение вызывающим методам о том,
+                                                                        // что метод может выбросить такую ошибку
         methodOne(); // если ошибка ловится в этом методе по 1 способу, то её обязательно нужно обработать и в данном методе(main)
     }               // но если 2 способом, то уже не нужно здесь её обрабатывать, т.к. она уже обработана внутри этого метода
 
