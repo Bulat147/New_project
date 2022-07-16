@@ -1,4 +1,4 @@
-package abstractClass;
+package anonClass;
 
 public class Test {
     // Если нам нужно лишь единожды переопределить какие-то методы класса - для этого не нужно создавать класс-потомок,
