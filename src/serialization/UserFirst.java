@@ -6,6 +6,8 @@ import java.io.*;
  *  его класс реализовывал интерфейс Serializable !!! */
 public class UserFirst implements Serializable{
     public static final String PATH = "src"+ File.separator+"serialization"+File.separator+"file1";
+    public static final String PATH2 = "src"+ File.separator+"serialization"+File.separator+"file2";
+    public static final String PATH3 = "src"+ File.separator+"serialization"+File.separator+"file3";
     public int id;
     public String login;
 
