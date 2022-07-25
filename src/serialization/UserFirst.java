@@ -8,8 +8,18 @@ public class UserFirst implements Serializable{
     public static final String PATH = "src"+ File.separator+"serialization"+File.separator+"file1";
     public static final String PATH2 = "src"+ File.separator+"serialization"+File.separator+"file2";
     public static final String PATH3 = "src"+ File.separator+"serialization"+File.separator+"file3";
+    public static final String PATH4 = "src"+ File.separator+"serialization"+File.separator+"file4.bin";
+    @Serial
+    /* Ёто важное поле нужно, чтобы правильно десериализовывать объекты при изменении самого класса (чтобы было видно,
+        что дл€ десериализации данного объекта нужно использовать старую версию этого класса с другим UID).
+        Ќо при каждом изменении этого класса нужно мен€ть его UID. */
+    private static final long serialVersionUID = 1425352176750222852L;
     public int id;
-    public String login;
+    // transient - примен€етс€ к полю объекта, которое мы не хотим сериализовывать;
+    // при десериализации объекта это его поле будет иметь значение null (тк ссылочный тип);
+    public transient String login;
+    // ¬от мы добавл€ем новое поле, затем мен€ем UID и пытаемс€ десериализовать - выдаст ошибку, что уже не тот UID класса
+    public int age;
 
     public UserFirst(int id, String login){
         this.id = id;
